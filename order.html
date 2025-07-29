@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <h1 class="name">Muskan's Cafe</h1>
+            <div class="navbar-ops">
+                   <p><a class="navbar-ops" href="index.html">Home</a></p>
+                   <!-- <p><a class="navbar-ops" href="about.html">About</a></p>
+                   <p><a class="navbar-ops" href="menu.html">Menu</a></p> -->
+                   <p><a class="navbar-ops" href="contact.html">Contact</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="order">
+        <div class="order-box">
+            <div class="left-box">
+                <img src="order.png" alt="order">
+            </div>
+            <div class="right-box">
+                <h2>Place Your Order</h2>
+                <input list="foods" class="field1" placeholder="Food Name" name="food name" required>
+                <datalist id="foods">
+                    <option value="cold coffee"></option>
+                    <option value="hot coffee"></option>
+                    <option value="noodles"></option>
+                    <option value="pizza"></option>
+                    <option value="pasta"></option>
+                    <option value="special thali"></option>
+                    <option value="salad"></option>
+                    <option value="soft drinks"></option>
+                </datalist>
+                <!-- <input type="text" class="field1" placeholder="Food Name"> -->
+                <input type="number" name="" class="field1"placeholder="Quantity" id="">
+                <!-- <input type="text" class="field1" placeholder="Your Email"> -->
+                 <input type="email" class="field1" placeholder="Your Email" name="email" required>
+                <input type="text" class="field1" placeholder="Phone">
+                <textarea placeholder="Address" class="field1"></textarea>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <button onclick="history.back()"  style="margin: 10px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Back</button>
+</body>
+</html>
